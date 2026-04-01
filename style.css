@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  color: #333;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+  padding-bottom: 0;
+}
+
+body.dark {
+  background: #121212;
+  color: #fff;
+}
+
+header {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+body.dark header {
+  background: #1e1e1e;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+#startBtn {
+  background: #ff7a5c;
+  color: white;
+}
+
+#resetBtn {
+  background: #6c757d;
+  color: white;
+}
+
+#addWater {
+  background: #28a745;
+  color: white;
+}
+
+#themeToggle {
+  background: #eee;
+}
+
+body.dark #themeToggle {
+  background: #333;
+  color: white;
+}
+
+.card {
+  width: 100%;
+  max-width: 700px;
+  background: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .card {
+  background: #1e1e1e;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #ff7a5c;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+#status {
+  margin-top: 10px;
+  color: gray;
+}
+
+#totalWater {
+  font-weight: bold;
+}
+
+#tip {
+  font-style: italic;
+  font-size: 18px;
+}
+
+footer {
+  width: 100%;
+  width: 100vw;
+  text-align: center;
+  padding: 35px;
+  margin-top: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+body.dark footer {
+  background: #1e1e1e;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
