@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intermittent Fasting Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Intermittent Fasting Tracker</h1>
+        <p style="text-align: center; padding: 10px">
+          Your companion for a healthier lifestyle
+        </p>
+      </div>
+
+      <button id="themeToggle">🌙 Dark Mode</button>
+    </header>
+
+    <h2>Fasting Plan</h2>
+    <section class="card">
+      <p>Choose a Plan:</p>
+      <select id="plan">
+        <option value="16">16:8</option>
+        <option value="18">18:6</option>
+        <option value="20">20:4</option>
+        <option value="23">OMAD</option>
+      </select>
+
+      <div class="btn-group">
+        <button id="startBtn">Start Fast</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </section>
+
+    <h2>Tracker</h2>
+    <section class="card">
+      <p id="time">Time Remaining: 00:00:00</p>
+      <p id="status">Status: Not Started</p>
+    </section>
+
+    <h2>Water Intake</h2>
+    <section class="card">
+      <p>Water Amount (ml)</p>
+      <input type="number" id="waterInput" placeholder="Enter ml" />
+      <button id="addWater">Add Water</button>
+      <p>Total Water Intake: <span id="totalWater">0</span> ml</p>
+    </section>
+
+    <h2>Motivation</h2>
+    <section class="card">
+      <p id="tip">Stay strong!</p>
+    </section>
+
+    <footer>
+      <p>© 2024 Intermittent Fasting Tracker. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
