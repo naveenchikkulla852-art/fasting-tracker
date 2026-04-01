@@ -39,3 +39,14 @@ document.getElementById("resetBtn").addEventListener("click", () => {
   timeDisplay.textContent = "Time Remaining: 00:00:00";
   statusDisplay.textContent = "Status: Not Started";
 });
+document.getElementById("addWater").addEventListener("click", () => {
+  const input = document.getElementById("waterInput");
+  const amount = Number(input.value);
+
+  if (!amount) return;
+
+  totalWater += amount;
+  document.getElementById("totalWater").textContent = totalWater;
+
+  input.value = "";
+});
