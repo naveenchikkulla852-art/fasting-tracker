@@ -53,3 +53,16 @@ document.getElementById("addWater").addEventListener("click", () => {
 document.getElementById("themeToggle").addEventListener("click", () => {
   document.body.classList.toggle("dark");
 });
+
+const tips = [
+  "Stay strong!",
+  "Consistency wins!",
+  "You're doing great!",
+  "Keep going!",
+  "Discipline > Motivation",
+];
+
+setInterval(() => {
+  const random = Math.floor(Math.random() * tips.length);
+  document.getElementById("tip").textContent = tips[random];
+}, 5000);
