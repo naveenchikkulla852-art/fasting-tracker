@@ -50,3 +50,6 @@ document.getElementById("addWater").addEventListener("click", () => {
 
   input.value = "";
 });
+document.getElementById("themeToggle").addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
